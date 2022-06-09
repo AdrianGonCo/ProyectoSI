@@ -5,10 +5,10 @@ USE `natacion`;
 
 
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
-  `nombre` varchar(239) NOT NULL,
-  `apellido` varchar(240) NOT NULL,
-  `edad` int(11) NOT NULL,
+  `id` int(10) NOT NULL,
+  `nombre` varchar(100) NOT NULL,
+  `apellido` varchar(100) NOT NULL,
+  `edad` int(2) NOT NULL,
   `nivel` varchar(50) NOT NULL,
   `sexo` varchar(10) NOT NULL,
   `turno` varchar(20) NOT NULL

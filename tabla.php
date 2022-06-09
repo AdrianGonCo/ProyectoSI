@@ -12,11 +12,14 @@
 <body>
 
 	<div class="container">
+
+		<!--Cabecera de color-->
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
 			<a class="navbar-brand" href="index.php">CRUD SISTEMAS DE INFORMACION</a>
 		</nav>
 
 		<h1 class="page-header text-center">Registro de Usuarios</h1>
+
 		<div class="row">
 			<div class="col-sm-12">
 				<a href="#addnew" class="btn btn-primary" data-toggle="modal"><span class="fa fa-plus"></span> Nuevo</a>
@@ -32,6 +35,8 @@
 
 					unset($_SESSION['message']);
 				}
+
+				//Creacion de tabla
 				?>
 				<table class="table table-bordered table-striped" style="margin-top:20px;">
 					<thead>
@@ -45,6 +50,7 @@
 						<th>Accion</th>
 					</thead>
 					<tbody>
+
 						<?php
 						// incluye la conexión
 						include_once('conexion.php');
@@ -69,21 +75,22 @@
 									</td>
 									<?php include('accion.php'); ?>
 								</tr>
+
 						<?php
 							}
 						} catch (PDOException $e) {
 							echo "Hay un problema en: " . $e->getMessage();
 						}
-
 						//cerrar conexión
 						$database->close();
-
 						?>
+
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
+
 	<?php include('formulario.php'); ?>
 	<script src="bootstrap/js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.js"></script>

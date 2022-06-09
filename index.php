@@ -3,6 +3,8 @@
 
 <head>
    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <title>CRUD</title>
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
@@ -16,23 +18,9 @@
 
 <body class="main-layout">
 
-   <div class="loader_bg">
-      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-   </div>
-
    <header>
-     
+      <!--Solo para dar espacio de cabecera a la pagina-->
       <div class="header">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-               </div>
-               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                  </nav>
-               </div>
-            </div>
-         </div>
       </div>
    </header>
 
@@ -41,7 +29,6 @@
          <div class="row d_flex">
             <div class="col-md-5">
                <div class="text-bg">
-
                   <h1>Proyecto Final<br> Sistemas de Informacion</h1>
                   <span>CRUD</span>
                   <p>González Corona Adrián </p>
@@ -57,19 +44,6 @@
       </div>
    </section>
 
-   <footer>
-
-   </footer>
-
-   <script src="js/jquery.min.js"></script>
-   <script src="js/popper.min.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
-   <script src="js/jquery-3.0.0.min.js"></script>
-   <script src="js/plugin.js"></script>
-
-   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-   <script src="js/custom.js"></script>
-   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,24 @@
-<!-- Agregar Nuevo -->
+<!-- Agregar un nuevo usuario-->
 <div class="modal fade" id="addnew" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+
+        <!--Texto de cabecera formulario-->
         <center>
-          <h4 class="modal-title" id="myModalLabel">Agregar usuario</h4>
+          <h4 class="modal-title" id="myModalLabel">Agregar Usuario</h4>
         </center>
+
+        <!--Boton agregar -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-
       </div>
+
       <div class="modal-body">
         <div class="container-fluid">
+
+          <!-- Crecion del formulario-->
           <form method="POST" action="agregar.php" autocomplete="off">
 
             <div class="row form-group">
@@ -48,7 +54,7 @@
                 <select class="form-control" name="nivel">
                   <option>Seleccionar</option>
                   <option value="no se nadar">No se nadar</option>
-                  <option value="principiante">Principianete</option>
+                  <option value="principiante">Principiante</option>
                   <option value="intermedio">Intermedio</option>
                   <option value="avanzado">Avanzado</option>
                 </select>
@@ -76,13 +82,19 @@
                 </select>
               </div>
             </div>
+
+            <!-- Botones del pie de formulario-->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-close"></span> Cancelar</button>
+              <button type="submit" name="add" class="btn btn-primary"><span class="fa fa-save"></span> Guardar</a>
+            </div>
+            
+          </form>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-close"></span> Cancelar</button>
-        <button type="submit" name="add" class="btn btn-primary"><span class="fa fa-save"></span> Guardar</a>
-          </form>
-      </div>
+
+
+
 
     </div>
   </div>
